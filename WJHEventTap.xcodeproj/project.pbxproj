@@ -10,6 +10,13 @@
 		C852E0941BAB7F25007D8486 /* WJHEventTap.h in Headers */ = {isa = PBXBuildFile; fileRef = C852E0931BAB7F25007D8486 /* WJHEventTap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C852E09A1BAB7F25007D8486 /* WJHEventTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C852E08E1BAB7F25007D8486 /* WJHEventTap.framework */; };
 		C852E0A11BAB7F25007D8486 /* WJHEventTapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C852E0A01BAB7F25007D8486 /* WJHEventTapTests.m */; };
+		C852E0AE1BAB801B007D8486 /* WJHEventTapDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C852E0AC1BAB801B007D8486 /* WJHEventTapDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C852E0AF1BAB801B007D8486 /* WJHEventTapDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C852E0AD1BAB801B007D8486 /* WJHEventTapDelegate.m */; };
+		C852E0B11BAB80E1007D8486 /* WJHEventTap.m in Sources */ = {isa = PBXBuildFile; fileRef = C852E0B01BAB80E1007D8486 /* WJHEventTap.m */; };
+		C852E0B41BAB81D8007D8486 /* NSDictionary+WJHEventTap.h in Headers */ = {isa = PBXBuildFile; fileRef = C852E0B21BAB81D8007D8486 /* NSDictionary+WJHEventTap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C852E0B51BAB81D8007D8486 /* NSDictionary+WJHEventTap.m in Sources */ = {isa = PBXBuildFile; fileRef = C852E0B31BAB81D8007D8486 /* NSDictionary+WJHEventTap.m */; };
+		C852E0B81BAB82E2007D8486 /* NSValue+WJHEventTap.h in Headers */ = {isa = PBXBuildFile; fileRef = C852E0B61BAB82E2007D8486 /* NSValue+WJHEventTap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C852E0B91BAB82E2007D8486 /* NSValue+WJHEventTap.m in Sources */ = {isa = PBXBuildFile; fileRef = C852E0B71BAB82E2007D8486 /* NSValue+WJHEventTap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		C852E0991BAB7F25007D8486 /* WJHEventTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJHEventTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C852E09F1BAB7F25007D8486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C852E0A01BAB7F25007D8486 /* WJHEventTapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJHEventTapTests.m; sourceTree = "<group>"; };
+		C852E0AC1BAB801B007D8486 /* WJHEventTapDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJHEventTapDelegate.h; sourceTree = "<group>"; };
+		C852E0AD1BAB801B007D8486 /* WJHEventTapDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJHEventTapDelegate.m; sourceTree = "<group>"; };
+		C852E0B01BAB80E1007D8486 /* WJHEventTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJHEventTap.m; sourceTree = "<group>"; };
+		C852E0B21BAB81D8007D8486 /* NSDictionary+WJHEventTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WJHEventTap.h"; sourceTree = "<group>"; };
+		C852E0B31BAB81D8007D8486 /* NSDictionary+WJHEventTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WJHEventTap.m"; sourceTree = "<group>"; };
+		C852E0B61BAB82E2007D8486 /* NSValue+WJHEventTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+WJHEventTap.h"; sourceTree = "<group>"; };
+		C852E0B71BAB82E2007D8486 /* NSValue+WJHEventTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+WJHEventTap.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +86,14 @@
 			isa = PBXGroup;
 			children = (
 				C852E0931BAB7F25007D8486 /* WJHEventTap.h */,
+				C852E0B01BAB80E1007D8486 /* WJHEventTap.m */,
 				C852E0911BAB7F25007D8486 /* Supporting Files */,
+				C852E0AC1BAB801B007D8486 /* WJHEventTapDelegate.h */,
+				C852E0AD1BAB801B007D8486 /* WJHEventTapDelegate.m */,
+				C852E0B21BAB81D8007D8486 /* NSDictionary+WJHEventTap.h */,
+				C852E0B31BAB81D8007D8486 /* NSDictionary+WJHEventTap.m */,
+				C852E0B61BAB82E2007D8486 /* NSValue+WJHEventTap.h */,
+				C852E0B71BAB82E2007D8486 /* NSValue+WJHEventTap.m */,
 			);
 			path = WJHEventTap;
 			sourceTree = "<group>";
@@ -109,6 +130,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C852E0B81BAB82E2007D8486 /* NSValue+WJHEventTap.h in Headers */,
+				C852E0AE1BAB801B007D8486 /* WJHEventTapDelegate.h in Headers */,
+				C852E0B41BAB81D8007D8486 /* NSDictionary+WJHEventTap.h in Headers */,
 				C852E0941BAB7F25007D8486 /* WJHEventTap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C852E0B11BAB80E1007D8486 /* WJHEventTap.m in Sources */,
+				C852E0B91BAB82E2007D8486 /* NSValue+WJHEventTap.m in Sources */,
+				C852E0AF1BAB801B007D8486 /* WJHEventTapDelegate.m in Sources */,
+				C852E0B51BAB81D8007D8486 /* NSDictionary+WJHEventTap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -306,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
