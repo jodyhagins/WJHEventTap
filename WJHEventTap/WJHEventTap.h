@@ -5,15 +5,13 @@
 //  Copyright (c) 2015 Jody Hagins. All rights reserved.
 //
 
-
-//FOUNDATION_EXPORT double WJHEventTapVersionNumber;
-//FOUNDATION_EXPORT const unsigned char WJHEventTapVersionString[];
-
-
 #import <Foundation/Foundation.h>
 #import <WJHEventTap/WJHEventTapDelegate.h>
 #import <WJHEventTap/NSDictionary+WJHEventTap.h>
 #import <WJHEventTap/NSValue+WJHEventTap.h>
+
+extern double WJHEventTapVersionNumber();
+extern unsigned char const * WJHEventTapVersionString();
 
 enum {
     /// The location value that will be returned as the "tapPoint" field of CGEventTapInformation and the "location" property of WJHEventTap if the represented event tap is targetd at a specific process instead of one of the general tap locations.

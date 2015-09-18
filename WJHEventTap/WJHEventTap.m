@@ -13,7 +13,46 @@ static ProcessSerialNumber currentPSN();
 static CGEventRef eventTapCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *userData);
 
 
+#pragma mark - Framework Initialization
+
+static double versionNumber;
+double WJHEventTapVersionNumber()
+{
+    return versionNumber;
+}
+
+static char * versionString;
+unsigned char const * WJHEventTapVersionString()
+{
+    return (unsigned char *)versionString;
+}
+
+__attribute__((constructor))
+static void init()
+{
+    @autoreleasepool {
+        NSBundle *bundle = [NSBundle bundleForClass:[WJHEventTap class]];
+        NSString *buildVersion = [bundle objectForInfoDictionaryKey:@"CFBundleVersion"];
+        NSString *releaseVersion = [bundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+        releaseVersion = [NSString stringWithFormat:@"%@ (%@)", releaseVersion, buildVersion];
+
+        versionNumber = [buildVersion doubleValue];
+        versionString = strdup([releaseVersion cStringUsingEncoding:NSUTF8StringEncoding]);
+    }
+}
+
+__attribute__((destructor))
+static void fini()
+{
+    if (versionString) {
+        free(versionString);
+        versionString = NULL;
+    }
+}
+
+
 #pragma mark - WJHEventTap Private API
+
 @interface WJHEventTap()
 /**
  When an event is created in the system, it is usually automatically enabled.  However, we want to start with it disabled.  Between the time we create the tap and when it is disabled, it is possible for it to have received events.  At minimum, it will have received the user-disabled event.  These events are eventually delivered (because the tap was enabled) to the callback handler.  We use this flag to indicate whether or not we are in the initial event-swallowing mode.
